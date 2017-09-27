@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context="com.example.nikolett.a14p_buzas_nikolett_szines_hazi.MainActivity">
+
+    <Button
+        android:id="@+id/sargaGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Sárga"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rgbKod"
+        android:layout_toStartOf="@+id/rgbKod" />
+
+    <Button
+        android:id="@+id/kekGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kék"
+        android:layout_below="@+id/pirosGomb"
+        android:layout_alignRight="@+id/rgbKod"
+        android:layout_alignEnd="@+id/rgbKod"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:id="@+id/pirosGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@+id/sargaGomb"
+        android:layout_toRightOf="@+id/rgbKod"
+        android:layout_toEndOf="@+id/rgbKod" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_above="@+id/sargaGomb"
+        android:layout_alignLeft="@+id/kekGomb"
+        android:layout_alignStart="@+id/kekGomb" />
+
+    <TextView
+        android:id="@+id/rgbKod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:text="TextView" />
+
+</RelativeLayout>
